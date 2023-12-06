@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   TodoApp:
-    image: selmantopal/hepsiemlak:0.0.1
+    image: selmantopal/hepsiemlak:0.0.2
     environment:
       COUCHBASE_CONNECTION: couchbase:11210
       COUCHBASE_BUCKET: default
