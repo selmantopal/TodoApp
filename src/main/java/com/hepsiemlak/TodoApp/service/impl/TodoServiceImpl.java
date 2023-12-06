@@ -87,6 +87,7 @@ public class TodoServiceImpl implements TodoService {
 
   public TodoResponseDTO createTodoResponse(Todo todo) {
     TodoResponseDTO todoResponseDTO = new TodoResponseDTO();
+    todoResponseDTO.setId(todo.getId());
     todoResponseDTO.setTitle(todo.getTitle());
     todoResponseDTO.setDescription(todo.getDescription());
     todoResponseDTO.setDate(todo.getDate());

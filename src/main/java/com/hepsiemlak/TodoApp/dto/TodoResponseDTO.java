@@ -16,6 +16,9 @@ import java.time.LocalDate;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
 public class TodoResponseDTO implements Serializable {
+  @JsonProperty("id")
+  @NotBlank
+  String id;
   @Schema(name = "title", example = "Todo", required = true)
   @JsonProperty("title")
   @NotBlank
